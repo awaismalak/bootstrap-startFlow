@@ -1,0 +1,364 @@
+// Reuse able code  start
+body {
+    color: #435564;
+    font-family: sans-serif;
+    background-color: #f9faff;
+
+    button {
+        outline: none !important;
+    }
+
+    .pTBhundred {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .pTBfifty {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .pTBtwenty {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .section_heading {
+        color: #071e56;
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .cards_heading {
+        color: #071e56;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .text_style {
+        font-size: 14px;
+
+    }
+
+    .smHeading {
+        font-size: 10px;
+        color: #071e56;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .numberOutline {
+        font-size: 5vw;
+        color: #071e56;
+    }
+
+    // Reuse able code  end 
+}
+
+#main_container {
+    padding-top: 58px;
+
+    header {
+        background-color: #f9faff;
+        z-index: 4;
+
+        .headerlinks {
+            a {
+                color: #435564;
+            }
+
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+
+            .headerIcons {
+                a {
+                    margin: 0px 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #content_container {
+        background-color: #f9faff;
+
+        .text_section {
+            padding-top: 30px;
+
+            #mainHeading {
+                color: #071e56;
+                font-size: 3vw;
+                font-weight: bold;
+                font-family: sans-serif;
+                line-height: 53px;
+            }
+
+            #text {
+                color: #435564;
+                font-size: 15px;
+                font-family: sans-serif;
+                margin: 25px 0px;
+            }
+        }
+    }
+
+    .contant_img {
+        text-align: center;
+    }
+
+    #management_container {
+        text-align: center;
+
+        .headingText {
+            width: 70%;
+            margin: auto;
+        }
+
+        .busunes_cards {
+            flex-wrap: wrap;
+
+            .card {
+                margin-bottom: 12px;
+                transition: all .5s ease-in-out;
+
+                i {
+                    color: #448dff;
+                    font-size: 35px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: black;
+
+                    &,
+                    h5,
+                    a,
+                    i {
+                        color: #ffffff;
+                        transition: all .5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    #prograss_container {
+        .outlineWorkflow {
+            width: 70%;
+            margin: auto;
+        }
+
+        .detail {
+            margin-bottom: 20px;
+        }
+    }
+
+    #gallery_container {
+        .image_container {
+            .layer {
+                display: none !important;
+                background-color: #279bee;
+                opacity: .8;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                transition: all 2s ease-in-out;
+
+                .layer_contant {
+                    color: white;
+
+                    i {
+                        font-size: 30px;
+                    }
+
+                    h6 {
+                        font-weight: bold;
+                    }
+
+                    hr {
+                        width: 60px;
+                    }
+                }
+            }
+
+            &:hover {
+                .layer {
+                    display: flex !important;
+                }
+            }
+        }
+    }
+
+    .service_managment {
+        i {
+            color: #66d47c;
+        }
+    }
+
+    #control_workFlow {
+        background-image: url(../../images/takecontrol.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .control_contant {
+            span {
+                color: #ffffff !important;
+                font-size: 30px;
+            }
+
+            .text_control {
+                font-size: 23px;
+                font-family: unset;
+            }
+        }
+    }
+
+    #ourTeam_container {
+        .employ_img {
+            width: 150px;
+            height: 150px;
+            background-color: #279bee;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        i {
+            font-size: 25px;
+            margin: 5px;
+        }
+    }
+
+    // teameMember_container css start 
+    #teameMember_container {
+        background-image: url(../../images/back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .feed_back {
+            background-color: #ffffff;
+            border-radius: 10px;
+
+            .avtar_container {
+                display: flex;
+
+                .avtar_image {
+                    width: 60px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .nameTitle {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            left: 180px;
+            z-index: 1;
+
+            li {
+                border: 1px solid #279bee;
+                height: 10px;
+                width: 10px;
+                background-color: #279bee;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    // our services container css start
+    #ourServices {
+        #price_plan {
+            justify-content: center;
+
+            .priceSchedule {
+                margin: 10px;
+                background-color: #ffffffff;
+                border-radius: 5px;
+                border: 1px solid #eee;
+
+                i {
+                    color: #66d47c;
+                    padding: 7px 0px;
+                }
+
+                .cross {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    // Our insight_conrainer
+    #insight_conrainer {
+
+        span,
+        a {
+            font-size: 10px;
+        }
+
+        h5 {
+            font-size: 15px !important;
+        }
+    }
+
+    // footer container start hear
+    #footer_container {
+        background-color: #1d2b35;
+        padding-top: 50px;
+        color: #647281;
+
+        .row {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            .contact_num {
+                font-size: 13px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding-bottom: 7px;
+
+                    a {
+                        color: #647281;
+                        font-size: 12px;
+
+                        strong {
+                            color: #ffffff;
+                        }
+
+                        &:hover {
+                            color: #ffffff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            border: 1px solid #647281;
+        }
+    }
+}
