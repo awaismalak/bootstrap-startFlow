@@ -8,6 +8,33 @@ body button {
   outline: none !important;
 }
 
+body .btn {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body button[aria-expanded=true] span {
+  display: none;
+}
+
+body button[aria-expanded=true] .cross_icon {
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body button[aria-expanded=false] i {
+  display: none;
+}
+
 body .pTBhundred {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -116,8 +143,11 @@ body .numberOutline {
 
 #main_container #management_container .busunes_cards .card {
   margin-bottom: 12px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+}
+
+#main_container #management_container .busunes_cards .card, #main_container #management_container .busunes_cards .card * {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #main_container #management_container .busunes_cards .card i {
@@ -133,13 +163,11 @@ body .numberOutline {
   background-color: black;
 }
 
-#main_container #management_container .busunes_cards .card:hover,
+#main_container #management_container .busunes_cards .card:hover p,
 #main_container #management_container .busunes_cards .card:hover h5,
 #main_container #management_container .busunes_cards .card:hover a,
 #main_container #management_container .busunes_cards .card:hover i {
   color: #ffffff;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
 }
 
 #main_container #prograss_container .outlineWorkflow {
@@ -151,17 +179,22 @@ body .numberOutline {
   margin-bottom: 20px;
 }
 
+#main_container #gallery_container .image_container img {
+  height: 350px;
+  width: 100%;
+}
+
 #main_container #gallery_container .image_container .layer {
-  display: none !important;
-  background-color: #279bee;
   opacity: .8;
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  background-color: #279bee;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 #main_container #gallery_container .image_container .layer .layer_contant {
@@ -181,9 +214,9 @@ body .numberOutline {
 }
 
 #main_container #gallery_container .image_container:hover .layer {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: .8;
 }
 
 #main_container .service_managment i {
@@ -226,6 +259,8 @@ body .numberOutline {
   background-image: url(../../images/back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #main_container #teameMember_container .feed_back {
@@ -297,6 +332,11 @@ body .numberOutline {
   font-size: 15px !important;
 }
 
+#main_container #insight_conrainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #main_container #footer_container {
   background-color: #1d2b35;
   padding-top: 50px;
@@ -336,5 +376,23 @@ body .numberOutline {
 
 #main_container #footer_container hr {
   border: 1px solid #647281;
+}
+
+@media screen and (max-width: 983px) {
+  #content_container {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #content_container #mainHeading {
+    font-size: 35px !important;
+  }
+  #prograss_container {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .service_managment .pTBhundred {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
